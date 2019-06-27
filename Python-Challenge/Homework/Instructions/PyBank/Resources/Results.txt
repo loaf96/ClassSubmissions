@@ -1,0 +1,6 @@
+Financial Analysis
+Total Months: 86
+Net Profit: 38382578
+Average Change: 446309.0465116279
+Greatest Increase: Feb-2012: $1170593
+Greatest Decrease: Sep-2013: $-1196225
