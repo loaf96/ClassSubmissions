@@ -20,8 +20,19 @@ with open(budget_data) as budget_data:
     # I calculated the sum and saved it to the variable net_profit
     prof_loss = [money for money in data_sets.values()]
     net_prof = sum(prof_loss)
-    # Finds the average of the profit or losses column
-    avg_money = net_prof/num_mon
+    # Used to find average rate of change for data where n is used to index not go beyond the limit of the
+    # list of each month's
+    n = 1
+    avg_dif = 0
+    for x in prof_loss:
+        if n == (num_mon):
+            break
+        y = prof_loss[n] - x
+        n = n + 1
+        avg_dif += y
+        next
+    avg_dif = round(avg_dif/(num_mon-1), 2)
+    
     # Finds greatest increase and decrease
     greatest_inc = max(prof_loss)
     greatest_dec = min(prof_loss)
@@ -34,12 +45,12 @@ with open(budget_data) as budget_data:
             mon_amon_dec = x
         else:   
             next
-
-   
 # This will be used to write the text file with the information
 # that has been previously gathered.
 txt_file = os.path.join('Results.txt')
 with open(txt_file, 'w') as outputdata:
     outputdata.write(f'Financial Analysis\nTotal Months: {num_mon}\nNet Profit: {net_prof}\n'
-    f'Average Change: {avg_money}\nGreatest Increase: {mon_amon_inc[0]}: ${mon_amon_inc[1]}\nGreatest Decrease: {mon_amon_dec[0]}: ${mon_amon_dec[1]}')
+    f'Average Change: ${avg_dif}\nGreatest Increase: {mon_amon_inc[0]}: ${mon_amon_inc[1]}\n'
+    f'Greatest Decrease: {mon_amon_dec[0]}: ${mon_amon_dec[1]}')
+
 
