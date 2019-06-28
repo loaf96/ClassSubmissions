@@ -14,7 +14,7 @@ with open(budget_data) as budget_data:
     data_sets = {row[0]: int(row[1]) for row in budgetread}
     # The number of data sets will also show the amount of
     # months that are used for the data 
-    num_mon = int(len(data_sets))
+    num_mon = len(data_sets)
     # Finds the net profit for the company by appending the values
     # of the dictionary created early in the form of integers. Then
     # I calculated the sum and saved it to the variable net_profit
