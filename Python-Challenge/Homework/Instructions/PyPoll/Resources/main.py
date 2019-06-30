@@ -58,5 +58,9 @@ with open(txt_file, 'w') as txt_results:
         txt_results.write('\n\n')
     next
     txt_results.write('-' * 20 + '\n' + '!'*3 + 'Winner' + '!'*3 + '\n' + str(winner))
+
+#Displays text file to terminal
+with open('Results.txt', 'r') as final_results:
+    print(final_results.read())
     
     
