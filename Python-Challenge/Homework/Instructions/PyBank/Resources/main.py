@@ -49,7 +49,8 @@ with open(budget_data) as budget_data:
 # that has been previously gathered.
 txt_file = os.path.join('Results.txt')
 with open(txt_file, 'w') as outputdata:
-    outputdata.write(f'Financial Analysis\nTotal Months: {num_mon}\nNet Profit: {net_prof}\n'
+    outputdata.write(f'Financial Analysis\n-------------------\n'
+    f'Total Months: {num_mon}\nNet Profit: {net_prof}\n'
     f'Average Change: ${avg_dif}\nGreatest Increase: {mon_amon_inc[0]}: ${mon_amon_inc[1]}\n'
     f'Greatest Decrease: {mon_amon_dec[0]}: ${mon_amon_dec[1]}')
 
