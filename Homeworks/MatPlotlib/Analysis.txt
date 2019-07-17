@@ -1,0 +1,5 @@
+Observable Trends and Analysis\n
+\n
+
+
+After doing some data munging, one can gather quite a bit of information from these sets of raw data. (1)Something that immediately became apparent to me was the large difference in usage between the different types of citites. One could have assumed that urban areas are going to have more usage of rideshare apps, but it is useful to be able to see the signifigance in the amount of usage through visual aids. The pie charts depict this difference nicely. (2)Areas with more drivers have lower fare prices on average. The scatter plot is able to illustrate this element of the data by one easily being able to follow the trend of the larger circles being lower on the y-axis. (3)Percentage of rides and percentage of fares have a higher correlation than percentage of drivers does with either. One could test a hypothesis of whether they make the same amount of money on average in an urban area as compared to a rural area. However, I would not draw this conclusion merely from this set of data and would suggest that further research would be neeeded. 
